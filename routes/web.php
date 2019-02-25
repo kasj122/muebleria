@@ -23,3 +23,7 @@ Route::get('/informacion', function (){
 Route::get('/contacto', function (){
     return view('paginas.contacto');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
